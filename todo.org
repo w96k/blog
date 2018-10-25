@@ -1,0 +1,20 @@
+#+TODO: TODO(t) IN_PROGRESS(p@/!) | DONE(d!) FREEZE(f@)
+* Features:
+** FREEZE Make webpack config for semantic-ui
+  - State "FREEZE"     from "IN_PROGRESS" [2018-10-25 Thu 20:05] \\
+    Doesn't need to do. Instead use bash script.
+  - State "IN_PROGRESS" from "TODO"       [2018-10-25 Thu 19:14] \\
+** DONE Add Semantic-UI git submodule
+  - State "DONE"       from "IN_PROGRESS" [2018-10-25 Thu 21:10]
+  - State "IN_PROGRESS" from "TODO"       [2018-10-25 Thu 20:47]
+** IN_PROGRESS Transfer a theme from gatsby to hugo
+  - State "IN_PROGRESS" from "TODO"       [2018-10-25 Thu 21:10]
+** TODO Transfer old blog posts
+** TODO Learn unused features of hugo (video tutorial on yt)
+** TODO Add Discus
+** TODO Add 
+** TODO Add i18n
+** TODO Add PostCSS for handling css and fixing icon issue
+** TODO Remake own styles to Moe-Theme look-like
+* Bugs:
+** TODO Fix semantic-ui icons (and buttons in footer)
