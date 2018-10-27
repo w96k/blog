@@ -3,3 +3,4 @@ title = "@w96k"
 baseurl = "http://example.org/"
 theme = "hugo-sui-blog"
 disqusShortname = "w96k"
+relativeURLs = true
