@@ -1,0 +1,3 @@
+[submodule "themes/hugo-sui-blog"]
+	path = themes/hugo-sui-blog
+	url = git@gitlab.com:w96k/hugo-sui-blog.git
