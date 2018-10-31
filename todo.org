@@ -1,28 +1,52 @@
 #+TODO: TODO(t) IN_PROGRESS(p@/!) | DONE(d!) FREEZE(f@)
-* Features:
-** FREEZE Make webpack config for semantic-ui
+* FREEZE Make webpack config for semantic-ui
   - State "FREEZE"     from "IN_PROGRESS" [2018-10-25 Thu 20:05] \\
     Doesn't need to do. Instead use bash script.
   - State "IN_PROGRESS" from "TODO"       [2018-10-25 Thu 19:14] \\
-** DONE Add Semantic-UI git submodule
+* DONE Add Semantic-UI git submodule
   - State "DONE"       from "IN_PROGRESS" [2018-10-25 Thu 21:10]
   - State "IN_PROGRESS" from "TODO"       [2018-10-25 Thu 20:47]
-** DONE Transfer a theme from gatsby to hugo
+* DONE Transfer a theme from gatsby to hugo
    - State "DONE"       from "IN_PROGRESS" [2018-10-27 Sat 19:44]
   - State "IN_PROGRESS" from "TODO"       [2018-10-25 Thu 21:10]
 *** DONE Add tags to posts
     - State "DONE"       from "TODO"       [2018-10-26 Fri 14:38]
 *** IN_PROGRESS Add tags page
     - State "IN_PROGRESS" from "TODO"       [2018-10-26 Fri 14:48]
-** IN_PROGRESS Transfer old blog posts
-   - State "IN_PROGRESS" from "TODO"       [2018-10-27 Sat 19:44]
-** TODO Add Pagination
-** DONE Add custom 404 page
+* DONE Transfer old blog posts
+  - State "DONE"       from "IN_PROGRESS" [2018-10-28 Sun 02:44]
+   - State "IN_PROGRESS" from "TODO"       [2018-10-27 Sat 19:
+* DONE Add Pagination
+  - State "DONE"       from "TODO"       [2018-10-28 Sun 04:09]
+* DONE Add custom 404 page
    - State "DONE"       from "TODO"       [2018-10-27 Sat 21:14]
-** IN_PROGRESS Learn unused features of hugo (video tutorial on yt)
+* DONE Learn unused features of hugo (video tutorial on yt)
+  - State "DONE"       from "IN_PROGRESS" [2018-10-30 Tue 20:30]
    - State "IN_PROGRESS" from "TODO"       [2018-10-26 Fri 14:56]
-** IN_PROGRESS Add Discus
+* DONE Add Discus
+   - State "DONE"       from "IN_PROGRESS" [2018-10-27 Sat 22:01]
    - State "IN_PROGRESS" from "TODO"       [2018-10-27 Sat 21:25]
-** TODO Add CI integration
-** TODO Add i18n
-** TODO Add about page
+* DONE Add CI integration
+   - State "DONE"       from "TODO"       [2018-10-27 Sat 22:02]
+* TODO Handle links to host not only in root
+* TODO Add i18n
+  - State "TODO"       from "IN_PROGRESS" [2018-10-30 Tue 20:36]
+  - State "IN_PROGRESS" from "TODO"       [2018-10-30 Tue 20:32]
+* IN_PROGRESS Add about page
+  - State "IN_PROGRESS" from "TODO"       [2018-10-31 Wed 15:54]
+* TODO Add pages list
+* DONE Make responsive layout (looks bad on mobile) 
+  - State "DONE"       from "IN_PROGRESS" [2018-10-30 Tue 21:19]
+  - State "IN_PROGRESS" from "TODO"       [2018-10-30 Tue 20:36]
+* DONE Replace social buttons to header
+  - State "DONE"       from "TODO"       [2018-10-30 Tue 22:51]
+* TODO Add readme page
+* TODO FIX Semantic-ui submodule
+* DONE Make github  mirror
+  - State "DONE"       from "TODO"       [2018-10-28 Sun 02:34]
+* TODO Add taxonomies to the theme
+** TODO subheading on top ("dev otaku game")
+** TODO social buttons in footer
+** TODO custom about page
+* TODO Add theme to Hugo Themes
+* TODO Написать обзорный пост о переезде блога с Gatsby на Hugo
