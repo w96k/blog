@@ -4,3 +4,4 @@ baseurl = "http://example.org/"
 theme = "hugo-sui-blog"
 disqusShortname = "w96k"
 relativeURLs = true
+Paginate = 5
