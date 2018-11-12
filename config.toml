@@ -5,3 +5,29 @@ theme = "hugo-sui-blog"
 disqusShortname = "w96k"
 relativeURLs = true
 Paginate = 5
+
+[params]
+#Text under main header
+about = ["Dev", "Otaku", "Gamer"]
+
+#Social buttons
+
+## Pick icon names from semantic-ui doc
+## https://semantic-ui.com/elements/icon.html
+
+social = [{
+text = "Github",
+icon = "github",
+link = "https://github.com/w96k",
+target = "_blank"
+}, {
+text = "About",
+icon = "user",
+link = "/pages/about/",
+primary = true
+}, {
+text = "Telegram",
+icon = "telegram",
+link = "https://t.me/w96k_blog",
+target = "_blank"
+}]
