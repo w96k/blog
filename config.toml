@@ -31,3 +31,7 @@ icon = "telegram",
 link = "https://t.me/w96k_blog",
 target = "_blank"
 }]
+
+# Do you need comments section or not (if true, then you need to set
+# disqusShortname var
+comments = true
