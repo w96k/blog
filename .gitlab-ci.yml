@@ -1,10 +1,16 @@
-image: monachus/hugo
-
 variables:
   GIT_SUBMODULE_STRATEGY: recursive
 
-pages:
+stages:
+  - hugo
+
+hugo:
+  stage: hugo
+  image: monachus/hugo
   script:
+  - curl -sL https://deb.nodesource.com/setup_8.x | bash -
+  - apt-get install nodejs
+  - npm install postcss-cli @fullhuman/postcss-purgecss
   - hugo
   artifacts:
     paths:

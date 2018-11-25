@@ -6,6 +6,7 @@ disqusShortname = "w96k"
 relativeURLs = true
 Paginate = 5
 
+
 [params]
 #Text under main header
 about = ["Dev", "Otaku", "Gamer"]
