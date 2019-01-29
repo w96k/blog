@@ -1,7 +1,13 @@
 ---
 title: "Samurai Champloo"
+cover: /img/champloo/poster.jpg
 date: 2018-11-03T14:00:00+03:00
 tags: ["Обзор", "Аниме"]
+menu:
+  main:
+    name: Посты
+    parent: "posts"
+    url: "/"
 ---
 
 Самурай Чамплу — одно из немногих оригинальных аниме, которое удосужилось таких

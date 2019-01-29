@@ -1,7 +1,14 @@
 ---
 title: "GTO; Аниме"
+cover: /img/gto/1.png
 date: 2018-11-01T13:12:16+03:00
 tags: ["Обзор", "Аниме"]
+menu:
+  main:
+    name: Посты
+    identifier: gto
+    parent: "posts"
+    url: "/"
 ---
 
 Онидзука Эйкичи, 22 года, холост. Приятно познакомиться!

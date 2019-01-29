@@ -1,7 +1,13 @@
 ---
 title: "Проблемы Overwatch"
+cover: /img/evaover.jpeg
 date: 2018-11-17T00:33:56+03:00
-draft: false
+menu:
+  main:
+    name: Посты
+    identifier: ow-problems
+    parent: "posts"
+    url: "/"
 taxonomies:
 tags:
   - Рефлексия

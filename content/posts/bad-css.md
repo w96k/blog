@@ -1,7 +1,14 @@
 ---
 title: "Вредные советы: CSS"
+draft: true
 date: 2018-11-28T13:34:39+03:00
 tags: ["Dev", "CSS", "Harmful Tips"]
+menu:
+  main:
+    name: Посты
+    identifier: bad-css
+    parent: "posts"
+    url: "/"
 ---
 
 - Используйте абсолютные величины для шрифтов (px вместо em)

@@ -1,8 +1,15 @@
 ---
 templateKey: blog-post
 title: Обновление блога
+cover: /img/hugo-logo.png
 date: '2018-10-31T17:00:00+03:00'
 tags: ["Блог"]
+menu:
+  main:
+    name: Посты
+    identifier: update-blog1
+    parent: "posts"
+    url: "/"
 ---
 
 Я обновил блог. Переехал с GatsbyJS на Hugo, съехал с Netlify на Gitlab Pages,
