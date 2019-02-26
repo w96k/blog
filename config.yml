@@ -35,7 +35,7 @@ params:
       icon: github
       link: https://github.com/w96k
       target: "_blank"
-      color: white
+      color: github
     - text: Telegram
       icon: telegram
       link: https://t.me/w96k_log
