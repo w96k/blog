@@ -11,6 +11,7 @@ hugo:
   - apt-get update
   - apt-get install -y gnupg
   - curl -sL https://deb.nodesource.com/setup_8.x | bash -
+  - apt-get install -y nodejs
   - npm install postcss-cli @fullhuman/postcss-purgecss
   - hugo
   artifacts:
