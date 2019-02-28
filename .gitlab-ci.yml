@@ -9,7 +9,7 @@ hugo:
   image: monachus/hugo
   script:
   - apt-get update
-  - apt-get install gnupg
+  - apt-get install -y gnupg
   - curl -sL https://deb.nodesource.com/setup_8.x | bash -
   - npm install postcss-cli @fullhuman/postcss-purgecss
   - hugo
