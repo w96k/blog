@@ -8,7 +8,7 @@ hugo:
   stage: hugo
   image: monachus/hugo
   script:
-  - apt-get install gnupg2
+  - apt-get install gnupg
   - curl -sL https://deb.nodesource.com/setup_8.x | bash -
   - npm install postcss-cli @fullhuman/postcss-purgecss
   - hugo
