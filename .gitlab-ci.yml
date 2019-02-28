@@ -13,7 +13,7 @@ hugo:
   - curl -sL https://deb.nodesource.com/setup_8.x | bash -
   - apt-get install -y nodejs
   - npm install
-  - cd themes/hugo-sui-blog; npm install
+  - cd themes/hugo-sui-blog; npm install; cd ../..
   - hugo
   artifacts:
     paths:
