@@ -1,12 +1,13 @@
 variables:
   GIT_SUBMODULE_STRATEGY: recursive
 
+image: monachus/hugo
+
 stages:
   - hugo
 
-hugo:
+pages:
   stage: hugo
-  image: monachus/hugo
   script:
   - apt-get update
   - apt-get install -y gnupg
