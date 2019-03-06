@@ -31,11 +31,6 @@ params:
     - Otaku
     - Gamer
   social:
-    - text: Github
-      icon: github
-      link: https://github.com/w96k
-      target: "_blank"
-      color: github
     - text: Telegram
       icon: telegram
       link: https://t.me/w96k_log
