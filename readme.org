@@ -5,7 +5,7 @@ This is my blog made using Hugo, ox-hugo & mine semantic-ui layout.
   #+BEGIN_SRC
   git clone --recurse-submodules -j8 https://gitlab.com/w96k/blog.git
   cd blog
-  .bin/hugo server
+  make
   #+END_SRC
 
 ** Dependencies
