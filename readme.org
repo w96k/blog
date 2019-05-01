@@ -1,0 +1,7 @@
+* w96k
+This is my blog made using Hugo, ox-hugo & mine semantic-ui layout.
+
+** Installation
+  #+BEGIN_SRC
+  git clone --recurse-submodules -j8 https://gitlab.com/w96k/blog.git
+  #+END_SRC
