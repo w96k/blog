@@ -3,5 +3,8 @@ This is my blog made using Hugo, ox-hugo & mine semantic-ui layout.
 
 ** Installation
   #+BEGIN_SRC
-  git clone --recurse-submodules -j8 https://gitlab.com/w96k/blog.git
+  git clone --recurse-submodules -j8 https://gitlab.com/w96k/blog.gitq
   #+END_SRC
+
+** Dependencies
+   You need hugo and ox-hugo installed.
