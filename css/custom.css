@@ -1,0 +1,33 @@
+body {
+    
+}
+
+article {
+    max-width: 80ch;
+    border-radius: 0.25em;
+    padding: 1em;
+    margin: 1em 0;
+    background: #fefefe;
+    box-shadow: 0 1px 3px rgba(0,0,0,.25);
+    /* text-align: justify; */
+}
+
+article h1:first-child,
+article h2:first-child,
+article h3:first-child,
+article h4:first-child,
+article h5:first-child,
+article h6:first-child {
+    margin-top: 0;
+    padding: 0;
+}
+
+.navbar {
+    background: #fefefe;
+    box-shadow: 0 1px 3px rgba(0,0,0,.1);
+    border: 0;
+}
+
+.navbar .button {
+    background: #fefefe;
+}

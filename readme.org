@@ -1,12 +1,6 @@
-* w96k
-This is my blog made using Hugo, ox-hugo & mine semantic-ui layout.
-
-** Installation
-  #+BEGIN_SRC
-  git clone --recurse-submodules -j8 https://gitlab.com/w96k/blog.git
-  cd blog
-  make
-  #+END_SRC
+* @w96k
+My blog built with Haunt & Mini.css
 
 ** Dependencies
-   You need hugo and ox-hugo installed.
+   - Gnu Guile Haunt
+   - Sassc

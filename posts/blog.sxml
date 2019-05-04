@@ -1,0 +1,13 @@
+;;; -*- scheme -*-
+
+(use-modules (haunt utils))
+
+`((title . "Создание блога")
+  (date . ,(string->date* "2019-02-01 12:00"))
+  (tags "foo" "bar")
+  (summary . "Создание блога")
+  (content
+   ((h2 "What is this thing?")
+    (p "This is Haunt.  A static site generator for GNU Guile.")
+    (p "Guile Scheme is great, eh?")
+    (img (@ (src "/images/guile-banner.small.png"))))))

@@ -1,1 +1,0 @@
-html,body{min-height:100vh;overflow:auto}body{padding:4em 0;background:linear-gradient(to bottom,rgba(0,0,0,.01),rgba(0,0,0,.025));position:absolute;top:0;bottom:0;right:0;left:0}img{width:100%}article.ui.segment{}#youmu{position:relative;bottom:-1em}

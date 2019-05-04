@@ -1,2 +1,2 @@
-dev:
-	.bin/hugo server
+sass:
+	sassc ./css/mini.scss --style compressed > ./css/mini.css
