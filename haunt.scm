@@ -62,6 +62,12 @@
               (div (@ (class "container"))
                    ,body)
               (footer
+               (p (small "Работает на "
+                         (a (@ (href "https://dthompson.us/projects/haunt.html"))
+                            Haunt)
+                         " при помощи "
+                         (a (@ (href "https://www.gnu.org/software/guile/"))
+                            "Guile Scheme")))
                (p (small "© 2019 Mikhail Kirillov"))))))
          #:post-template
          (lambda (post)
@@ -89,15 +95,15 @@
        (div (@ (class "row"))
             (div (@ (class "col-sm-12 col-md-3"))
                  (img (@ (src "/images/ava.jpg")
-                         (class "rounded")
+                         (class "shadowed rounded")
                          (style "max-width: 300px; width: 100%;")))
                  (div (@ (class "button-group"))
-                      (a (@ (href "https://twitter.com/w96kz") (class "button")) "Twitter"))
+                      (a (@ (href "https://twitter.com/w96kz") (class "shadowed button")) "Twitter"))
                  (div (@ (class "button-group"))
-                      (a (@ (href "https://t.me/w96k_log") (class "button")) "Telegram")))
+                      (a (@ (href "https://t.me/w96k_log") (class "shadowed button")) "Telegram")))
             
             (div (@ (class "col-sm-12 col-md-9"))
-                 (h2 "Обо мне")
+                 (h2 "Кириллов Михаил")
                  (p "Я — фуллстек разработчик. Люблю функциональное
 программирование, LISP и движение за свободное программное
 обеспечение.")
@@ -115,8 +121,145 @@
              (with-layout mini-theme site "Обо мне" body)
              sxml->html))
 
+(define (bookshelf-page site posts)
+  (define body
+    `((article
+       
+       ;; Пиши сокращай
+       (div (@ (class "row"))
+            (div (@ (class "col-sm-12 col-md-3"))
+                 (img (@ (class "cover")
+                         (src "/images/books/pishi.jpg")))
+                 )
+            (div (@ (class "col-sm-12 col-md-9"))
+                 (div (@ (class "card fluid"))
+                      (h3 (@ (class "section")) "Пиши сокращай")
+                      (p "Полезна для всех, кто публикует хоть что-нибудь в
+интернете. После прочтения стараюсь применять советы из книги на
+практике.")
+                      (p "Оценка: "
+                         (mark (@ (class "tertiary")) "Рекомендую"))
+                      )
+
+                 (p (@ (style "text-align: center;"))
+                    (a
+                     (@ (href "https://www.goodreads.com/book/show/31855502"))
+                     "Книга на Goodreads"))
+
+                 ))
+
+       ;; Learning GNU EMACS
+       (div (@ (class "row"))
+            (div (@ (class "col-sm-12 col-md-3"))
+                 (img (@ (class "cover")
+                         (src "/images/books/emacs.jpg")))
+                 )
+            (div (@ (class "col-sm-12 col-md-9"))
+                 (div (@ (class "card fluid"))
+                      (h3 (@ (class "section")) "Learning GNU Emacs")
+                      (p "Отличная и объемная книга для первичного
+погружения в мир имакс. Местами устарело, но в целом стиль
+повествования и само содержание написано качественно.")
+                      (p "Оценка: "
+                         (mark (@ (class "tertiary")) "Рекомендую"))
+                      )
+
+                 (p (@ (style "text-align: center;"))
+                    (a
+                     (@ (href "https://www.goodreads.com/book/show/31855502"))
+                     "Книга на Goodreads"))))
+
+       ;; Важные годы
+       (div (@ (class "row"))
+            (div (@ (class "col-sm-12 col-md-3"))
+                 (img (@ (class "cover")
+                         (src "/images/books/20-30.jpg")))
+                 )
+            (div (@ (class "col-sm-12 col-md-9"))
+                 (div (@ (class "card fluid"))
+                      (h3 (@ (class "section")) "Важные годы"
+                          (small "Почему не стоит откладывать жизнь на потом."))
+                      (p "Автор — психотерапевт. Книга основана на
+посещениях клиентами автора книги. Основной посыл — в возрасте от 20
+до 30 лет надо усердно работать, а не отдыхать 'по-молодости'.")
+                      (p "Оценка: "
+                         (mark (@ (class "secondary")) "Не рекомендую"))
+                      )
+
+                 (p (@ (style "text-align: center;"))
+                    (a
+                     (@ (href "https://www.goodreads.com/book/show/31855502"))
+                     "Книга на Goodreads"))))
+
+       ;; Clojure for the brave and true
+       (div (@ (class "row"))
+            (div (@ (class "col-sm-12 col-md-3"))
+                 (img (@ (class "cover")
+                         (src "/images/books/clojure-for-brave.jpg")))
+                 )
+            (div (@ (class "col-sm-12 col-md-9"))
+                 (div (@ (class "card fluid"))
+                      (h3 (@ (class "section")) "Clojure For The Brave & True")
+                      (p "Отличная книга для первичного погружения в Clojure.")
+                      
+                      (p "Оценка: "
+                         (mark (@ (class "tertiary")) "Рекомендую"))
+                      )
+
+                 (p (@ (style "text-align: center;"))
+                    (a
+                     (@ (href "https://www.goodreads.com/book/show/31855502"))
+                     "Книга на Goodreads"))))
+
+       ;; Girls Last Tour
+       (div (@ (class "row"))
+            (div (@ (class "col-sm-12 col-md-3"))
+                 (img (@ (class "cover")
+                         (src "/images/books/girls-last-tour.jpg")))
+                 )
+            (div (@ (class "col-sm-12 col-md-9"))
+                 (div (@ (class "card fluid"))
+                      (h3 (@ (class "section")) "Girls Last Tour")
+                      
+                      (p "Оценка: "
+                         (mark (@ (class "tertiary")) "Рекомендую"))
+                      )
+
+                 (p (@ (style "text-align: center;"))
+                    (a
+                     (@ (href "https://www.goodreads.com/book/show/31855502"))
+                     "Книга на Goodreads"))))
+
+       ;; Lesbian Experience
+       (div (@ (class "row"))
+            (div (@ (class "col-sm-12 col-md-3"))
+                 (img (@ (class "cover")
+                         (src "/images/books/lesbian.jpg")))
+                 )
+            (div (@ (class "col-sm-12 col-md-9"))
+                 (div (@ (class "card fluid"))
+                      (h3 (@ (class "section")) "My Lesbian Experience with Loneliness")
+                      (p "Оценка: "
+                         (mark (@ (class "tertiary")) "Рекомендую"))
+                      )
+
+                 (p (@ (style "text-align: center;"))
+                    (a
+                     (@ (href "https://www.goodreads.com/book/show/33113683-my-lesbian-experience-with-loneliness"))
+                     "Книга на Goodreads"))))
+
+       (p (@ (style "text-align: center;"))
+          (a (@ (href "https://www.goodreads.com/user/show/71049684-mikhail-kirillov")) "Мой
+Goodreads"))
+       
+       )))
+
+  (make-page "bookshelf.html"
+             (with-layout mini-theme site "Книжная полка" body)
+             sxml->html))
+
 (define %collections
-`(("Главная" "index.html" ,posts/reverse-chronological)))
+  `(("Главная" "index.html" ,posts/reverse-chronological)))
 
 (site #:title "@w96k"
       #:domain "w96k.com"
@@ -128,6 +271,7 @@
                        (atom-feed)
                        (atom-feeds-by-tag)
                        about-page
+                       bookshelf-page
                        (static-directory "images")
                        (static-directory "css")
                        (static-directory "js")))

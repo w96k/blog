@@ -3,13 +3,13 @@ body {
 }
 
 article {
-    max-width: 80ch;
+    max-width: calc(80ch + 2em);
     border-radius: 0.25em;
     padding: 1em;
     margin: 1em 0;
     background: #fefefe;
     box-shadow: 0 1px 3px rgba(0,0,0,.25);
-    /* text-align: justify; */
+
 }
 
 article h1:first-child,
@@ -30,4 +30,27 @@ article h6:first-child {
 
 .navbar .button {
     background: #fefefe;
+}
+
+/* 16:9 */
+.video {
+    padding-top: 56.25%;
+    position: relative;
+    width: calc(100% - 1em);
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+    position:  absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.cover {
+    margin: 0.5em 0;
+    border: 1px solid rgba(0,0,0,.3);
+    border-radius: 0.1em;
 }
