@@ -167,6 +167,25 @@
              (with-layout mini-theme site "Редирект" body)
              sxml->html))
 
+(define (404-page site posts)
+  (define body
+    `((article (@ (style "text-align: center;"))
+               (h2 "Ошибка 404"
+                   (small "Страница не найдена"))
+
+               (div
+                (a (@ (class "button")
+                      (href "/"))
+                   "На главную"))
+
+               (img (@ (id "youmu")
+                       (src "/images/youmu.png")))
+               )))
+  
+  (make-page "404.html"
+             (with-layout mini-theme site "Not Found" body)
+             sxml->html))
+
 ;; TODO: Refactor book creating
 (define (make-book name sub cover) (0))
 
@@ -329,6 +348,7 @@
                        redirect-dobryakov
                        redirect-pirogov
                        redirect-libreboot
+                       404-page
                        (static-directory "images")
                        (static-directory "css")
                        (static-directory "js")))

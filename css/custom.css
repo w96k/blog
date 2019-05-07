@@ -54,3 +54,9 @@ iframe {
     border: 1px solid rgba(0,0,0,.3);
     border-radius: 0.1em;
 }
+
+#youmu {
+    position: relative;
+    top: 1em;
+    max-width: 100%;
+}
