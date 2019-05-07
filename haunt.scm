@@ -122,6 +122,51 @@
              (with-layout mini-theme site "Обо мне" body)
              sxml->html))
 
+(define (redirect-dobryakov site posts)
+  (define body
+    `((article
+       (meta (@
+              (http-equiv "refresh")
+              (content "0; url=/григорий-добряков-об-устройстве-на-работу.html")))
+       (h2 "Перенаправляю...")
+       (p (a (@ (href "/григорий-добряков-об-устройстве-на-работу.html"))
+             "Нажмите если не перенаправилось"))
+       )))
+  
+  (make-page "dobryakov_employment.html"
+             (with-layout mini-theme site "Редирект" body)
+             sxml->html))
+
+(define (redirect-pirogov site posts)
+  (define body
+    `((article
+       (meta (@
+              (http-equiv "refresh")
+              (content "0; url=/алексей-пирогов-про-фп.html")))
+       (h2 "Перенаправляю...")
+       (p (a (@ (href "/алексей-пирогов-про-фп.html"))
+             "Нажмите если не перенаправилось"))
+       )))
+  
+  (make-page "pirogov_fp.html"
+             (with-layout mini-theme site "Редирект" body)
+             sxml->html))
+
+(define (redirect-libreboot site posts)
+  (define body
+    `((article
+       (meta (@
+              (http-equiv "refresh")
+              (content "0; url=/libreboot-x200t.html")))
+       (h2 "Перенаправляю...")
+       (p (a (@ (href "/libreboot-x200t.html"))
+             "Нажмите если не перенаправилось"))
+       )))
+  
+  (make-page "libreboot_x200t.html"
+             (with-layout mini-theme site "Редирект" body)
+             sxml->html))
+
 ;; TODO: Refactor book creating
 (define (make-book name sub cover) (0))
 
@@ -139,18 +184,18 @@
                  (div (@ (class "card fluid"))
                       (h3 (@ (class "section")) "Пиши сокращай")
                       (p "Полезна для всех, кто публикует хоть что-нибудь в
-интернете. После прочтения стараюсь применять советы из книги на
-практике.")
+                      интернете. После прочтения стараюсь применять советы из книги на
+                      практике.")
                       (p "Оценка: "
                          (mark (@ (class "tertiary")) "Рекомендую"))
                       )
 
                  (p (@ (style "text-align: center;"))
-                    (a
-                     (@ (href "https://www.goodreads.com/book/show/31855502"))
-                     "Книга на Goodreads"))
+                 (a
+                  (@ (href "https://www.goodreads.com/book/show/31855502"))
+                  "Книга на Goodreads"))
 
-                 )))
+              )))
 
       ;; Learning GNU EMACS
       (article
@@ -281,6 +326,9 @@
                        (atom-feeds-by-tag)
                        about-page
                        bookshelf-page
+                       redirect-dobryakov
+                       redirect-pirogov
+                       redirect-libreboot
                        (static-directory "images")
                        (static-directory "css")
                        (static-directory "js")))
