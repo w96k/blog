@@ -4,3 +4,10 @@ My blog built with Haunt & Mini.css
 ** Dependencies
    - Gnu Guile Haunt
    - Sassc
+
+#+BEGIN_SRC
+guix install haunt sassc
+make
+#+END_SRC
+
+Open http://localhost:8080
