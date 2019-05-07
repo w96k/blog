@@ -1,2 +1,3 @@
-sass:
-	sassc ./css/mini.scss --style compressed > ./css/mini.css
+watch:
+	sassc ./css/mini.scss --style compressed > ./css/mini.css & \
+	haunt serve --watch
