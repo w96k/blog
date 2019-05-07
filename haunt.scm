@@ -114,18 +114,22 @@
                   (li "Пилю на " (a (@ (href "https://github.com/w96k/")) "Github") " ")
                   (li "Практикуюсь на " (a (@ (href "https://www.codewars.com/users/w96k")) "Codewars")))
 
-                 (p "Вы можете мне написать на почту с вопросом или темой для поста " (span (@ (class "icon-mail"))) "w96k.ru@gmail.com"))
-            ))))
+                 (p "Вы можете мне написать на почту с вопросом или
+темой для
+поста " (a (@ (href "mailto:w96k.ru@gmail.com")) "w96k.ru@gmail.com")))))))
 
   (make-page "about.html"
              (with-layout mini-theme site "Обо мне" body)
              sxml->html))
 
+;; TODO: Refactor book creating
+(define (make-book name sub cover) (0))
+
 (define (bookshelf-page site posts)
   (define body
-    `((article
-       
-       ;; Пиши сокращай
+    `(
+      ;; Пиши сокращай
+      (article
        (div (@ (class "row"))
             (div (@ (class "col-sm-12 col-md-3"))
                  (img (@ (class "cover")
@@ -146,9 +150,10 @@
                      (@ (href "https://www.goodreads.com/book/show/31855502"))
                      "Книга на Goodreads"))
 
-                 ))
+                 )))
 
-       ;; Learning GNU EMACS
+      ;; Learning GNU EMACS
+      (article
        (div (@ (class "row"))
             (div (@ (class "col-sm-12 col-md-3"))
                  (img (@ (class "cover")
@@ -167,9 +172,10 @@
                  (p (@ (style "text-align: center;"))
                     (a
                      (@ (href "https://www.goodreads.com/book/show/31855502"))
-                     "Книга на Goodreads"))))
+                     "Книга на Goodreads")))))
 
-       ;; Важные годы
+      ;; Важные годы
+      (article
        (div (@ (class "row"))
             (div (@ (class "col-sm-12 col-md-3"))
                  (img (@ (class "cover")
@@ -189,9 +195,10 @@
                  (p (@ (style "text-align: center;"))
                     (a
                      (@ (href "https://www.goodreads.com/book/show/31855502"))
-                     "Книга на Goodreads"))))
+                     "Книга на Goodreads")))))
 
-       ;; Clojure for the brave and true
+      ;; Clojure for the brave and true
+      (article
        (div (@ (class "row"))
             (div (@ (class "col-sm-12 col-md-3"))
                  (img (@ (class "cover")
@@ -209,9 +216,10 @@
                  (p (@ (style "text-align: center;"))
                     (a
                      (@ (href "https://www.goodreads.com/book/show/31855502"))
-                     "Книга на Goodreads"))))
+                     "Книга на Goodreads")))))
 
-       ;; Girls Last Tour
+      ;; Girls Last Tour
+      (article
        (div (@ (class "row"))
             (div (@ (class "col-sm-12 col-md-3"))
                  (img (@ (class "cover")
@@ -228,9 +236,10 @@
                  (p (@ (style "text-align: center;"))
                     (a
                      (@ (href "https://www.goodreads.com/book/show/31855502"))
-                     "Книга на Goodreads"))))
+                     "Книга на Goodreads")))))
 
-       ;; Lesbian Experience
+      ;; Lesbian Experience
+      (article
        (div (@ (class "row"))
             (div (@ (class "col-sm-12 col-md-3"))
                  (img (@ (class "cover")
@@ -246,13 +255,13 @@
                  (p (@ (style "text-align: center;"))
                     (a
                      (@ (href "https://www.goodreads.com/book/show/33113683-my-lesbian-experience-with-loneliness"))
-                     "Книга на Goodreads"))))
+                     "Книга на Goodreads")))))
 
+      (article
        (p (@ (style "text-align: center;"))
-          (a (@ (href "https://www.goodreads.com/user/show/71049684-mikhail-kirillov")) "Мой
-Goodreads"))
-       
-       )))
+          (a (@ (href "https://www.goodreads.com/user/show/71049684-mikhail-kirillov")
+                (class "button"))
+             "Мой Goodreads")))))
 
   (make-page "bookshelf.html"
              (with-layout mini-theme site "Книжная полка" body)
