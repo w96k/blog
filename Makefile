@@ -9,4 +9,3 @@ build:
 	mv site/pirogov_fp.html site/posts/pirogov_fp/index.html
 	mkdir site/posts/libreboot_x200t
 	mv site/libreboot_x200t.html site/posts/libreboot_x200t/index.html
-	haunt serve
