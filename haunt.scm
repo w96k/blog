@@ -30,7 +30,7 @@
 
 (define %cc-by-sa-link
   '(a (@ (href "https://creativecommons.org/licenses/by-sa/4.0/"))
-      "Creative Commons Attribution Share-Alike 4.0 International"))
+      (img (@ (src "/images/cc.png")))))
 
 (define mini-theme
   (theme #:name "Mini"
@@ -55,13 +55,14 @@
               (div (@ (class "container"))
                    ,body)
               (footer
-               (p (small "Работает на "
+               (p (small "Работает на"
                          (a (@ (href "https://dthompson.us/projects/haunt.html"))
                             Haunt)
                          " при помощи "
                          (a (@ (href "https://www.gnu.org/software/guile/"))
                             "Guile Scheme")))
-               (p (small "© 2019 Mikhail Kirillov"))))))
+               (p (small "© 2019 Mikhail Kirillov"))
+               (p (,%cc-by-sa-link))))))
          #:post-template
          (lambda (post)
            `(article
