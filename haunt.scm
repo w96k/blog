@@ -32,6 +32,10 @@
   '(a (@ (href "https://creativecommons.org/licenses/by-sa/4.0/"))
       (img (@ (src "/images/cc.png")))))
 
+(define %gpl-logo
+  '(a (@ (href "https://www.gnu.org/licenses/gpl-3.0.txt"))
+      (img (@ (src "/images/gpl.png")))))
+
 (define mini-theme
   (theme #:name "Mini"
          #:layout
@@ -62,7 +66,7 @@
                          (a (@ (href "https://www.gnu.org/software/guile/"))
                             "Guile Scheme")))
                (p (small (a (@ (href "https://gitlab.com/w96k/blog")) "Исходный код") " © 2019 Mikhail Kirillov"))
-               (p (,%cc-by-sa-link))))))
+               (p (,%gpl-logo) " " (,%cc-by-sa-link))))))
          #:post-template
          (lambda (post)
            `(article
