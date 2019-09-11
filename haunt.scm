@@ -61,8 +61,7 @@
                          " при помощи "
                          (a (@ (href "https://www.gnu.org/software/guile/"))
                             "Guile Scheme")))
-               (p (small (a (@ (href "https://gitlab.com/w96k/blog")) "Исходный код")))
-               (p (small "© 2019 Mikhail Kirillov"))
+               (p (small (a (@ (href "https://gitlab.com/w96k/blog")) "Исходный код © 2019 Mikhail Kirillov")))
                (p (,%cc-by-sa-link))))))
          #:post-template
          (lambda (post)
