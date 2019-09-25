@@ -183,7 +183,7 @@
       #:domain "w96k.com"
       #:default-metadata
       '((author . "Mikhail Kirillov")
-        (email  . "w96k.ru@gmail.com"))
+        (email  . "w96k@member.fsf.org"))
       #:readers (list sxml-reader html-reader)
       #:builders (list (blog #:theme mini-theme #:collections %collections)
                        (atom-feed)
