@@ -6,6 +6,7 @@ article {
     max-width: calc(70ch + 2em);
     border-radius: 0.25em;
     padding: 1em;
+    padding-bottom: 1.5em;
     margin: 1em 0;
     background: #fefefe;
     box-shadow: 0 1px 3px rgba(0,0,0,.25);
