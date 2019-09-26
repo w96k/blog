@@ -3,13 +3,18 @@ body {
 }
 
 article {
-    max-width: calc(80ch + 2em);
+    max-width: calc(70ch + 2em);
     border-radius: 0.25em;
     padding: 1em;
     margin: 1em 0;
     background: #fefefe;
     box-shadow: 0 1px 3px rgba(0,0,0,.25);
+    text-align: justify;
+    hyphens: auto;
+}
 
+#about {
+    text-align: left;
 }
 
 article h1:first-child,

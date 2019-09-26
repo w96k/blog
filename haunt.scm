@@ -89,22 +89,22 @@
 
 (define (about-page site posts)
   (define body
-    `((article
-       (div (@ (class "row"))
-            (div (@ (class "col-sm-12 col-md-3"))
-                 (img (@ (src "/images/ava.jpg")
-                         (class "shadowed rounded")
-                         (style "max-width: 300px; width: 100%;")))
-                 (div (img (@ (src "/images/fsf.png")
-                              (class "shadowed rounded")))))
-            
-            (div (@ (class "col-sm-12 col-md-9"))
-                 (h2 "Кириллов Михаил")
-                 (p "Я — фуллстек разработчик. Люблю функциональное
+    `((article (@ (id "about"))
+               (div (@ (class "row"))
+                    (div (@ (class "col-sm-12 col-md-3"))
+                         (img (@ (src "/images/ava.jpg")
+                                 (class "shadowed rounded")
+                                 (style "max-width: 300px; width: 100%;")))
+                         (div (img (@ (src "/images/fsf.png")
+                                      (class "shadowed rounded")))))
+                    
+                    (div (@ (class "col-sm-12 col-md-9"))
+                         (h2 "Кириллов Михаил")
+                         (p "Я — фуллстек разработчик. Люблю функциональное
 программирование, LISP и движение за свободное программное
 обеспечение.")
 
-                 (p "Вы можете мне написать на почту с вопросом или
+                         (p "Вы можете мне написать на почту с вопросом или
 темой для
 поста " (a (@ (href "mailto:w96k@member.fsf.org")) "w96k@member.fsf.org")))))))
 
