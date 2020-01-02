@@ -1,1 +1,13 @@
-Страница не найдена
+#+Title: 404: Страница не найдена
+
+#+BEGIN_EXPORT html
+<article style="text-align: center; overflow-y: hidden;">
+  <h2>Ошибка 404
+    <small>Страница не найдена</small>
+  </h2>
+  <div>
+    <a class="button" href="/">На главную</a>
+  </div>
+  <img id="youmu" src="/public/images/youmu.png">
+</article>
+#+END_EXPORT
