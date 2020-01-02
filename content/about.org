@@ -1,0 +1,48 @@
+#+Title: Обо мне: Кириллов Михаил
+
+#+BEGIN_EXPORT html
+<article>
+<div class="row">
+<div class="col-sm-12 col-md-3">
+  <img src="/public/images/w96k.png" class="shadowed rounded" style="max-width: 180px; width: 100%;">
+  <div>
+    <img src="/public/images/fsf.png" class="shadowed rounded">
+  </div>
+</div>
+<div class="col-sm-12 col-md-9">
+  <h2>Кириллов Михаил</h2>
+
+  <p style="position: relative; margin-top: -0.75em;">
+      <span class="icon-location"></span>
+      <a href="https://www.openstreetmap.org/relation/2555133">Россия, Москва</a>
+  </p>
+
+  <p>Разработчик. Люблю функциональное
+программирование, LISP и движение за свободное программное
+обеспечение.</p>
+
+<div class="row">
+<div class="col-sm">
+  <p>Связь:</p>
+  <ul>
+    <li><span class="icon-mail"></span> Email: <a href="mailto:w96k@posteo.net">
+       w96k@posteo.net</a></li>
+    <li><span class="icon-share"></span> Mastodon: <a href="https://fosstodon.org/@w96k">@w96k</a></li>
+  </ul>
+</div>
+<div class="col-sm">
+  <p>Код:</p>
+  <ul>
+    <li><span class="icon-link"></span> Sourcehut: <a href="https://git.sr.ht/~w96k/">
+       @w96k</a></li>
+    <li><span class="icon-link"></span> Github: <a href="https://github.com/w96k">
+       @w96k</a></li>
+  </ul>  
+</div>
+
+</div>
+
+</div>
+</div>
+</article>
+#+END_EXPORT

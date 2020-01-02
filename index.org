@@ -1,0 +1,7 @@
+#+TITLE: @w96k
+
+- content
+  - [[file:content/index.org][@w96k]]
+  - [[file:content/404.org][404]]
+  - posts
+    - [[file:content/posts/test.org][test]]

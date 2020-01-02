@@ -1,0 +1,139 @@
+body {
+    padding: 1em;
+}
+
+article {
+    max-width: calc(80ch + 4em);
+    border-radius: 0.em;
+    margin: 0 var(--universal-padding);
+    padding: 1em;
+    background: #fefefe;
+    box-shadow: 0 1px 3px rgba(0,0,0,.1);
+    position: relative;
+}
+
+article h1:first-child,
+article h2:first-child,
+article h3:first-child,
+article h4:first-child,
+article h5:first-child,
+article h6:first-child {
+    margin-top: 0;
+    padding: 0;
+}
+
+.navbar {
+    background: #fefefe;
+    border: 0;
+}
+
+.navbar .button {
+    background: #fefefe;
+    text-transform: none;
+}
+
+/* 16:9 */
+.video {
+    padding-top: 56.25%;
+    position: relative;
+    width: calc(100% - 1em);
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+    position:  absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.cover {
+    margin: 0.5em 0;
+    border: 1px solid rgba(0,0,0,.3);
+    border-radius: 0.1em;
+}
+
+#youmu {
+    position: relative;
+    top: 1em;
+    max-width: 100%;
+}
+
+#preamble {
+    margin: var(--universal-margin);
+    box-shadow: 0 1px 3px rgba(0,0,0,.1);
+}
+
+#postamble {
+    margin: var(--universal-margin);
+    max-width: calc(80ch + 6em);
+}
+
+hr {
+    background: rgba(0,0,0,.05) !important;
+    height: 0.5rem !important;
+    margin: 1px !important;
+}
+
+#table-of-contents {
+    z-index: 1050;
+    font-size: 9pt;
+    position: fixed;
+    right: calc(var(--universal-margin) + 0.5em);
+    top: 79px;
+    background: #fefefe;
+    line-height: 12pt;
+    box-shadow: 0 1px 3px rgba(0,0,0,.1);
+    max-height: 80%;
+    overflow: auto;
+}
+
+#table-of-contents * {
+    padding: none;
+}
+
+#table-of-contents h2 {
+    font-size: 13pt;
+    border: 0;
+    font-weight: 400;
+    padding: .05em .5em;
+}
+
+#text-table-of-contents ul {
+    margin: 0 1em;
+}
+
+#text-table-of-contents ul li {
+    font-size: 11pt;
+    width: 100%;
+}
+
+#table-of-contents #text-table-of-contents {
+    display: none;
+    text-align: left;
+}
+
+#table-of-contents:hover #text-table-of-contents {
+    display:block;
+    padding: none;
+    margin: 0;
+    padding: 0;
+}
+
+#table-of-contents li {
+    clear:both
+}
+
+.licenses {
+    margin-top: 0.75em !important;
+}
+
+.licenses a:not(:first-child) {
+    margin-left: 0.5em;
+}
+
+.inline li {
+    display: inline-flex;
+}
