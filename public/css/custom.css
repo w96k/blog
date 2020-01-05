@@ -74,6 +74,16 @@ iframe {
     max-width: calc(80ch + 6em);
 }
 
+#meta {
+    text-align: right;
+}
+
+@media screen and (max-width: 800px) {
+    #postamble, #meta {
+        text-align: center;
+    }
+}
+
 hr {
     background: rgba(0,0,0,.05) !important;
     height: 0.5rem !important;
