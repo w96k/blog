@@ -1,8 +1,25 @@
-#+TITLE: @w96k
+#+TITLE: @w96k: Кириллов Михаил
 #+OPTIONS: toc:nil
 
 * Посты
 
-#+BEGIN_SRC emacs-lisp :exports results :results raw
-(+ 3 2)
+#+BEGIN_SRC emacs-lisp :exports results :results html
+(defun read-lines (filePath)
+  "Return a list of lines of a file at filePath."
+  (with-temp-buffer
+    (insert-file-contents filePath)
+    (split-string (buffer-string) "\n" t)))
+
+;; Sort by modified date
+(setq list-of-posts (sort (directory-files-and-attributes "./posts" nil ".org$")
+      #'(lambda (x y) (time-less-p (nth 6 y) (nth 6 x)))))
+
+(defun make-links (str)
+  (setq file-name (car str))
+  (setq str-link (s-replace ".org" ".html" file-name))
+  ;; We make an assumption, that #+TITLE is on first line
+  (setq article-title (s-replace "#+TITLE: " "" (car (read-lines (concat "posts/" file-name)))))
+  (concat "<li><a href=\"/posts/" str-link "\">" article-title "</a></li>"))
+  
+(concat "<ul>" (mapconcat 'make-links list-of-posts "\n") "</ul>")
 #+END_SRC
