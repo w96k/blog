@@ -2,3 +2,7 @@
 #+OPTIONS: toc:nil
 
 * Посты
+
+#+BEGIN_SRC emacs-lisp :exports results :results raw
+(+ 3 2)
+#+END_SRC

@@ -1369,7 +1369,7 @@ table:not(.horizontal) thead {
 }
 
 table:not(.horizontal) tbody tr:first-child td {
-  border-top: 0;
+  /* border-top: 0; */
 }
 
 table.horizontal {

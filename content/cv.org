@@ -1,0 +1,58 @@
+#+Title: Curriculum Vitae
+
+* Curriculum Vitae
+
+** Личные данные
+
+| Имя                | Кириллов Михаил             |
+| Дата рождения:     | 15.08.1996                  |
+| Местоположение:    | Россия, Москва              |
+| Семейное положение | Не женат                    |
+| Email:             | [[mailto:w96k@posteo.net][w96k@posteo.net]]             |
+| Mastodon           | [[https://fosstodon.org/@w96k/][https://fosstodon.org/@w96k]] |
+| Код:               | [[https://git.sr.ht/~w96k/][https://git.sr.ht/~w96k/]]    |
+| Блог:              | https://w96k.com            |
+
+
+** Опыт работы
+
+*** Visyond Ventures Ltd
+| Период:    | Ноябрь 2018 - Март 2019 |
+| Должность: | /Front-End Developer/   |
+| Сайт:      | https://visyond.com     |
+
+*** ООО «Оптифарма»
+| Период:    | Ноябрь 2017 - Март 2018 |
+| Должность: | /QA-Engineer/           |
+| Сайт:      | https://medkompas.ru    |
+
+*** Indacoin ltd
+| Период:    | Июнь 2017 - Сен. 2017 |
+| Должность: | /Front-End Developer/ |
+| Сайт:      | https://indacoin.com  |
+
+** Образование
+*** Среднее-профессиональное
+#+ATTR_LaTeX: :center nil
+| Учреждение:    | /Политехнический колледж № 8/              |
+| Время обучения | *Сен. 2012 - Июль 2016*                    |
+| Специальность: | Организация и технология защиты информации |
+| Код:           | 10.02.01                                   |
+
+** Навыки
+~Javascript~
+~Lisp~
+~React~
+~Python~
+~PostgreSQL~
+~Bootstrap~
+~Semantic-UI~
+~Node.js~
+~Linux~
+~Git~
+~CI~
+~Emacs~
+
+** Языки
+| Русский    | Родной                          |
+| Английский | Чтение технической документации |
